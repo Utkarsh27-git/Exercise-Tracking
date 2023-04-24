@@ -48,7 +48,7 @@ export default class CreateUser extends Component {
 
 
                 <div className="form-group">
-                    <label>Username: </label>
+                    <label><b>Username:</b> </label>
                     <input type="text"
                     required
                     className="form-control"
