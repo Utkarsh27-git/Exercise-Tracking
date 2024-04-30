@@ -7,9 +7,6 @@ ReactDOM.render(<App />, document.getElementById("root"));
 
 /*
 
-Hey i am following the same tutorial and i figured out the answer
-
-in index.js
 
 ReactDOM.render(
   <React.StrictMode>
