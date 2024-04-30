@@ -46,6 +46,11 @@
   padding: 1rem;
 }
 
+.changes {
+  font-weight: bold;
+  color: #fff
+}
+
 .navbar-brand {
   font-size: 1.5rem;
   font-weight: bold;

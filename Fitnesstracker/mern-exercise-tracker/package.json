@@ -14,14 +14,14 @@
     "mongoose": "^7.0.4",
     "react": "^16.13.1",
     "react-datepicker": "^4.11.0",
-    "react-dom": "^16.13.1",
-    "react-scripts": "^3.4.3"
+    "react-dom": "^16.13.1"
   },
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "build" : "npm i"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -37,5 +37,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-scripts": "^5.0.1"
   }
 }

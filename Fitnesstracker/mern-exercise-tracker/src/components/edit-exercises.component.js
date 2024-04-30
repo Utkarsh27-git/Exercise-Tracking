@@ -75,7 +75,6 @@ export default class EditExercise extends Component {
         e.preventDefault();
         e.stopPropagation();
 
-
         const exercise = {
             username: this.state.username,
             description: this.state.description,
@@ -94,13 +93,13 @@ export default class EditExercise extends Component {
     render() {
         return (
             <div>
-                <h3>Edit Exercise Log</h3>
+                <h3 style={{ color: 'white' }}>Edit Exercise Log</h3>
 
                 <form onSubmit={this.onSubmit}>
                     <div className="form-group">
-                        <label>Username:</label>
+                        <label style={{ color: 'white' }}>Username:</label>
 
-                        <select ref="userInput"
+                        <select
                             required
                             className="form-control"
                             value={this.state.username}
@@ -118,7 +117,7 @@ export default class EditExercise extends Component {
                     </div>
 
                     <div className="form-group">
-                        <label>Description: </label>
+                        <label style={{ color: 'white' }}>Description: </label>
                         <input type="text"
                             required
                             className="form-control"
@@ -127,7 +126,7 @@ export default class EditExercise extends Component {
                     </div>
 
                     <div className="form-group">
-                        <label>Duration (in minutes): </label>
+                        <label style={{ color: 'white' }}>Duration (in minutes): </label>
                         <input type="text"
                             required
                             className="form-control"
@@ -136,7 +135,7 @@ export default class EditExercise extends Component {
                     </div>
 
                     <div className="form-group">
-                        <label>Date: </label>
+                        <label style={{ color: 'white' }}>Date: </label>
                         <div>
                             <DatePicker
                                 selected={this.state.date}

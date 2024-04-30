@@ -14,6 +14,8 @@ export default class CreateExercise extends Component {
         this.onChangeDate = this.onChangeDate.bind(this);
         this.onSubmit = this.onSubmit.bind(this);
         
+        this.userInput = React.createRef();
+        
         this.state = {
             username: "",
             description: "",
@@ -82,13 +84,14 @@ export default class CreateExercise extends Component {
     render() {
         return (
             <div>
-                <h3>Create New Exercise Log</h3>
+                <h3 style={{ color: 'white' }}>Create New Exercise Log</h3>
+
 
                 <form onSubmit = {this.onSubmit}>
                     <div className="form-group">
-                        <label><b>Username:</b> </label>
+                        <label style={{ color: 'white' }}><b >Username:</b> </label>
 
-                        <select ref="userInput"
+                        <select ref={this.userInput}
                         required
                         className="form-control"
                         value={this.state.username}
@@ -99,14 +102,14 @@ export default class CreateExercise extends Component {
                                     key = {user}
                                     value = {user}>
                                         {user}
-                                    </option>;
+                                    </option>; 
                                 })
                             }
                         </select>
                     </div>
 
                     <div className="form-group">
-                        <label><b>Description:</b></label>
+                        <label style={{ color: 'white' }}><b>Description:</b></label>
                         <input type="text"
                         required
                         className="form-control"
@@ -115,7 +118,7 @@ export default class CreateExercise extends Component {
                     </div>
 
                     <div className="form-group">
-                        <label><b>Duration</b> (in minutes): </label>
+                        <label style={{ color: 'white' }}><b>Duration</b> (in minutes): </label>
                         <input type="text"
                         required
                         className="form-control"
@@ -124,7 +127,7 @@ export default class CreateExercise extends Component {
                     </div>
 
                     <div className="form-group">
-                        <label><b>Date:</b> </label>
+                        <label style={{ color: 'white' }}><b>Date:</b> </label>
                         <div>
                         <DatePicker
                         selected = {this.state.date}

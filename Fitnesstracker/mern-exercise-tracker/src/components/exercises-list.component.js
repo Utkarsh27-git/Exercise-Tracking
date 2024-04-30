@@ -51,7 +51,7 @@ export default class ExerciseList extends Component {
     render() {
         return (
             <div>
-                <h3>Logged Exercises</h3>
+                <h3 style={{ color: 'white' }}>Logged Exercises</h3>
                 <table className="table">
                     <thead className="thead-light">
                         <tr>
@@ -62,7 +62,7 @@ export default class ExerciseList extends Component {
                             <th>Actions</th>
                         </tr>
                     </thead>
-                    <tbody>
+                    <tbody style={{ color: 'white' }}>
                         { this.exerciseList() }
                     </tbody>
                 </table>
